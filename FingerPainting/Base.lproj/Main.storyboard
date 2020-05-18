@@ -25,11 +25,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="20" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" image="arrowshape.turn.up.left.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="undoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U8u-Dr-gpQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKc-0o-1tU">
                                         <rect key="frame" x="36" y="0.0" width="20" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" image="arrowshape.turn.up.right.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="redoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJE-pI-fii"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -41,6 +47,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="settingsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgM-7d-DMW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -56,6 +65,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="Jh5-rv-uUX" id="mPt-Z9-87M"/>
+                        <outlet property="redoBtn" destination="xKc-0o-1tU" id="otx-n8-mBe"/>
+                        <outlet property="settingsBtn" destination="2D8-gt-s5O" id="Z26-oG-iU5"/>
+                        <outlet property="undoBtn" destination="JRp-xK-l6Q" id="4Kn-dU-Kyo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
