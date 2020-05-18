@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FingerPaintingViewController.swift
 //  FingerPainting
 //
 //  Created by Timothy Adamcik on 5/15/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FingerPaintingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

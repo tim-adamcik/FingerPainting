@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA468280246F27CB00E1117C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46827F246F27CB00E1117C /* AppDelegate.swift */; };
 		BA468282246F27CB00E1117C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA468281246F27CB00E1117C /* SceneDelegate.swift */; };
-		BA468284246F27CB00E1117C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA468283246F27CB00E1117C /* ViewController.swift */; };
+		BA468284246F27CB00E1117C /* FingerPaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA468283246F27CB00E1117C /* FingerPaintingViewController.swift */; };
 		BA468287246F27CB00E1117C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA468285246F27CB00E1117C /* Main.storyboard */; };
 		BA46828A246F27CB00E1117C /* FingerPainting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA468288246F27CB00E1117C /* FingerPainting.xcdatamodeld */; };
 		BA46828C246F27CD00E1117C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA46828B246F27CD00E1117C /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		BA46827C246F27CB00E1117C /* FingerPainting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPainting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA46827F246F27CB00E1117C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA468281246F27CB00E1117C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA468283246F27CB00E1117C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA468283246F27CB00E1117C /* FingerPaintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPaintingViewController.swift; sourceTree = "<group>"; };
 		BA468286246F27CB00E1117C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA468289246F27CB00E1117C /* FingerPainting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FingerPainting.xcdatamodel; sourceTree = "<group>"; };
 		BA46828B246F27CD00E1117C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				BA46827F246F27CB00E1117C /* AppDelegate.swift */,
 				BA468281246F27CB00E1117C /* SceneDelegate.swift */,
-				BA468283246F27CB00E1117C /* ViewController.swift */,
+				BA468283246F27CB00E1117C /* FingerPaintingViewController.swift */,
 				BA468285246F27CB00E1117C /* Main.storyboard */,
 				BA46828B246F27CD00E1117C /* Assets.xcassets */,
 				BA46828D246F27CD00E1117C /* LaunchScreen.storyboard */,
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA46828A246F27CB00E1117C /* FingerPainting.xcdatamodeld in Sources */,
-				BA468284246F27CB00E1117C /* ViewController.swift in Sources */,
+				BA468284246F27CB00E1117C /* FingerPaintingViewController.swift in Sources */,
 				BA468280246F27CB00E1117C /* AppDelegate.swift in Sources */,
 				BA468282246F27CB00E1117C /* SceneDelegate.swift in Sources */,
 			);
