@@ -28,10 +28,10 @@ class FingerPaintingViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = false
-        if let touch = touches.first {
+        guard let touch = touches.first else { return }
+            swiped = false
             lastPoint = touch.location(in: self.view)
-        }
+        
     }
     
     func drawLine(from fromPoint: CGPoint, to toPoint: CGPoint ) {
@@ -42,7 +42,7 @@ class FingerPaintingViewController: UIViewController {
         tempImageView.image?.draw(in: view.bounds)
         
         context.move(to: fromPoint)
-        context.move(to: toPoint)
+        context.addLine(to: toPoint)
         
         context.setLineCap(.round)
         context.setBlendMode(.normal)
@@ -74,7 +74,7 @@ class FingerPaintingViewController: UIViewController {
             drawLine(from: lastPoint, to: lastPoint)
         }
         
-        UIGraphicsBeginImageContext(mainImageView.frame.size)
+        UIGraphicsBeginImageContext(view.frame.size)
         mainImageView.image?.draw(in: view.bounds, blendMode: .normal, alpha: 1.0)
         tempImageView.image?.draw(in: view.bounds, blendMode: .normal, alpha: opacity)
         mainImageView.image = UIGraphicsGetImageFromCurrentImageContext()
