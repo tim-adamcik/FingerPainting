@@ -50,10 +50,72 @@
                                     <action selector="settingsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3q-dR-s9Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL8-4a-PFW">
+                                <rect key="frame" x="260" y="44" width="47" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fd1-49-zR0"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="N9t-Rq-JCj">
+                                <rect key="frame" x="0.0" y="744" width="275" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NS-Q6-kym">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Black"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXB-ys-BBH">
+                                        <rect key="frame" x="25" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Grey"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyI-FQ-o4U">
+                                        <rect key="frame" x="50" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Red"/>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZt-xx-5T3">
+                                        <rect key="frame" x="75" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Blue"/>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-XV-z2z">
+                                        <rect key="frame" x="100" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="LightBlue"/>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eos-uc-qg4">
+                                        <rect key="frame" x="125" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="DarkGreen"/>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-rx-sDX">
+                                        <rect key="frame" x="150" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="LightGreen"/>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-lN-6JR">
+                                        <rect key="frame" x="175" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Brown"/>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtM-lf-4ma">
+                                        <rect key="frame" x="200" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="DarkOrange"/>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmf-2P-OVf">
+                                        <rect key="frame" x="225" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Yellow"/>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqK-PJ-kO3">
+                                        <rect key="frame" x="250" y="0.0" width="25" height="118"/>
+                                        <state key="normal" image="Eraser"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="EC0-wH-6de"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="275" id="TMo-0Q-4Xq"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zZO-Z8-vxR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6sQ-YY-NHc"/>
+                            <constraint firstItem="veA-eW-Hc8" firstAttribute="leading" secondItem="tL8-4a-PFW" secondAttribute="trailing" constant="15" id="7kE-hS-piU"/>
                             <constraint firstItem="oy9-TP-85E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BbI-cq-vjk"/>
                             <constraint firstItem="oy9-TP-85E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EJC-Cz-qfA"/>
                             <constraint firstItem="veA-eW-Hc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MJZ-W4-8Mx"/>
@@ -62,7 +124,10 @@
                             <constraint firstItem="zZO-Z8-vxR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TPS-fz-s25"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="veA-eW-Hc8" secondAttribute="trailing" constant="20" id="V4l-MW-fOA"/>
                             <constraint firstItem="oy9-TP-85E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VHZ-jn-DQS"/>
+                            <constraint firstItem="tL8-4a-PFW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b2O-Hy-a7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N9t-Rq-JCj" secondAttribute="bottom" id="iXL-uT-81H"/>
                             <constraint firstItem="AFN-4K-QMa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p6V-C1-Mbt"/>
+                            <constraint firstItem="N9t-Rq-JCj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v4O-07-vlx"/>
                             <constraint firstItem="oy9-TP-85E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wV8-RE-xqh"/>
                             <constraint firstItem="AFN-4K-QMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yhW-MP-NNa"/>
                         </constraints>
@@ -82,6 +147,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Black" width="53" height="332"/>
+        <image name="Blue" width="53" height="332"/>
+        <image name="Brown" width="53" height="332"/>
+        <image name="DarkGreen" width="53" height="332"/>
+        <image name="DarkOrange" width="53" height="332"/>
+        <image name="Eraser" width="55" height="167"/>
+        <image name="Grey" width="53" height="332"/>
+        <image name="LightBlue" width="53" height="332"/>
+        <image name="LightGreen" width="53" height="332"/>
+        <image name="Red" width="53" height="332"/>
+        <image name="Yellow" width="53" height="332"/>
         <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle" catalog="system" width="128" height="121"/>
     </resources>

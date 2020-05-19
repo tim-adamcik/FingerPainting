@@ -85,6 +85,9 @@ class FingerPaintingViewController: UIViewController {
     @IBAction func undoBtnPressed(_ sender: Any) {
     }
     
+    @IBAction func clearBtnPressed(_ sender: Any) {
+    }
+    
     @IBAction func redoBtnPressed(_ sender: Any) {
     }
     
