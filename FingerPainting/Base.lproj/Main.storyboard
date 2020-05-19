@@ -64,46 +64,79 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NS-Q6-kym">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Black"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQq-Tf-FQE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXB-ys-BBH">
                                         <rect key="frame" x="25" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Grey"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukJ-2F-BjV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyI-FQ-o4U">
                                         <rect key="frame" x="50" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Red"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oL3-mc-fWX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZt-xx-5T3">
                                         <rect key="frame" x="75" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Blue"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="keE-3H-WB2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-XV-z2z">
                                         <rect key="frame" x="100" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="LightBlue"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5LT-eG-sHe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eos-uc-qg4">
                                         <rect key="frame" x="125" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="DarkGreen"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Wp-n9-sAs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-rx-sDX">
                                         <rect key="frame" x="150" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="LightGreen"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xik-a9-urp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-lN-6JR">
                                         <rect key="frame" x="175" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Brown"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxX-z6-xUY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtM-lf-4ma">
                                         <rect key="frame" x="200" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="DarkOrange"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyH-bY-JY1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmf-2P-OVf">
                                         <rect key="frame" x="225" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Yellow"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVn-HH-Frj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqK-PJ-kO3">
                                         <rect key="frame" x="250" y="0.0" width="25" height="118"/>
                                         <state key="normal" image="Eraser"/>
+                                        <connections>
+                                            <action selector="pencilPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ne-BS-kTT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

@@ -93,5 +93,15 @@ class FingerPaintingViewController: UIViewController {
     
     @IBAction func settingsBtnPressed(_ sender: Any) {
     }
+
+    @IBAction func pencilPressed(sender: AnyObject) {
+        guard let pencil = Pencil(tag: sender.tag) else { return }
+        
+        color = pencil.color
+        
+        if pencil == .eraser {
+          opacity = 1.0
+        }
+    }
 }
 
