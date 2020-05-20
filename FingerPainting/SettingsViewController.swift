@@ -45,6 +45,12 @@ class SettingsViewController: UIViewController {
         brushSlider.value = Float(brush)
         brushWidthLabel.text = "\(brushSlider.value)"
         opacityLevelLabel.text = "\(opacitySlider.value)"
+        redSlider.value = Float(red * 255)
+        redValueLabel.text = Int(redSlider.value).description
+        greenSlider.value = Float(green * 255)
+        greenValueLabel.text = Int(greenSlider.value).description
+        blueSlider.value = Float(blue * 255)
+        blueValueLabel.text = Int(blueSlider.value).description
         drawPreview()
     }
     
@@ -77,13 +83,19 @@ class SettingsViewController: UIViewController {
         opacityLevelLabel.text = String(format: "%.1f", opacity)
         drawPreview()
     }
-    @IBAction func redSliderMoved(_ sender: Any) {
-    }
-    @IBAction func greenSliderMoved(_ sender: Any) {
+
+    @IBAction func colorSliderMoved(_ sender: Any) {
+        red = CGFloat(redSlider.value / 255.0)
+        redValueLabel.text = Int(redSlider.value).description
+        green = CGFloat(greenSlider.value / 255.0)
+        greenValueLabel.text = Int(greenSlider.value).description
+        blue = CGFloat(blueSlider.value / 255.0)
+        blueValueLabel.text = Int(blueSlider.value).description
+            
+        drawPreview()
+
     }
     
-    @IBAction func blueSliderMoved(_ sender: Any) {
-    }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
         delegate?.settingsViewControllerFinished(self)

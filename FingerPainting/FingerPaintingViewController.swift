@@ -94,9 +94,16 @@ class FingerPaintingViewController: UIViewController {
     
     @IBAction func settingsBtnPressed(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "SettingsViewController") as! SettingsViewController
+        var red: CGFloat = 0.0
+        var green: CGFloat = 0.0
+        var blue: CGFloat = 0.0
+        color.getRed(&red, green: &green, blue: &blue, alpha: nil)
         vc.delegate = self
         vc.brush = brushWidth
         vc.opacity = opacity
+        vc.red = red
+        vc.green = green
+        vc.blue = blue
         present(vc, animated: true)
     }
 
@@ -116,6 +123,11 @@ extension FingerPaintingViewController: SettingsViewControllerDelegate {
     func settingsViewControllerFinished(_ settingsViewController: SettingsViewController) {
         brushWidth = settingsViewController.brush
         opacity = settingsViewController.opacity
+        color = UIColor(red: settingsViewController.red,
+        green: settingsViewController.green,
+        blue: settingsViewController.blue,
+        alpha: opacity)
+
         dismiss(animated: true)
     }
     
