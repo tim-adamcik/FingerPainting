@@ -48,7 +48,6 @@
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <action selector="settingsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3q-dR-s9Q"/>
-                                    <segue destination="KW7-iE-aiI" kind="presentation" id="L6y-p7-p9K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL8-4a-PFW">
@@ -167,6 +166,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="b62-Uw-yhs"/>
                     <connections>
                         <outlet property="mainImageView" destination="oy9-TP-85E" id="cl6-Lk-Zp1"/>
                         <outlet property="redoBtn" destination="Jpt-VC-x8h" id="Srr-fm-edQ"/>
@@ -184,41 +184,50 @@
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" id="KW7-iE-aiI" customClass="SettingsViewController" customModule="FingerPainting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSL-Ft-mYF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-o8-ZOc">
-                                <rect key="frame" x="95" y="208" width="224" height="210"/>
+                                <rect key="frame" x="95" y="252" width="224" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="JAg-rk-J6J"/>
                                     <constraint firstAttribute="height" constant="210" id="TXp-VB-oij"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="OZ3-HX-vFh">
-                                <rect key="frame" x="20" y="488" width="386" height="198"/>
+                                <rect key="frame" x="20" y="532" width="386" height="208"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="0iV-O9-oD5">
-                                        <rect key="frame" x="0.0" y="0.0" width="386" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="40"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-Ce-wPc">
-                                                <rect key="frame" x="-2" y="0.0" width="331.5" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="331.5" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="KWJ-uF-cM4"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="redSliderMoved:" destination="KW7-iE-aiI" eventType="valueChanged" id="jPO-qM-UV8"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44H-uY-J9w">
-                                                <rect key="frame" x="352.5" y="0.0" width="33.5" height="30"/>
+                                                <rect key="frame" x="352.5" y="0.0" width="33.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Kc-Xv-2lx"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="9w3-7o-QmS">
-                                        <rect key="frame" x="0.0" y="84" width="386" height="30"/>
+                                        <rect key="frame" x="0.0" y="94" width="386" height="30"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aim-rZ-e6V">
                                                 <rect key="frame" x="-2" y="0.0" width="331.5" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ixO-BG-qnU"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="greenSliderMoved:" destination="KW7-iE-aiI" eventType="valueChanged" id="RbM-nL-AK2"/>
                                                 </connections>
@@ -232,10 +241,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6bY-AP-Glf">
-                                        <rect key="frame" x="0.0" y="168" width="386" height="30"/>
+                                        <rect key="frame" x="0.0" y="178" width="386" height="30"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-HU-zBG">
                                                 <rect key="frame" x="-2" y="0.0" width="331.5" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ay7-e4-tQs"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="blueSliderMoved:" destination="KW7-iE-aiI" eventType="valueChanged" id="hJx-cm-9k6"/>
                                                 </connections>
@@ -251,14 +263,14 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Custom-Color" translatesAutoresizingMaskIntoConstraints="NO" id="Tl4-6w-wgu">
-                                <rect key="frame" x="78.5" y="727" width="257" height="62"/>
+                                <rect key="frame" x="78.5" y="781" width="257" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="257" id="lJK-4x-Wez"/>
                                     <constraint firstAttribute="height" constant="62" id="tPn-x0-00h"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-yS-p2Y">
-                                <rect key="frame" x="8" y="52" width="398" height="91"/>
+                                <rect key="frame" x="8" y="96" width="398" height="91"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-vb-heg">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="24"/>
@@ -314,11 +326,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XA-sD-pFb">
+                                <rect key="frame" x="339" y="44" width="55" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="KW7-iE-aiI" eventType="touchUpInside" id="ekm-Xc-1x3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Tez-o8-ZOc" firstAttribute="centerX" secondItem="HSL-Ft-mYF" secondAttribute="centerX" id="A1k-hz-Gvw"/>
+                            <constraint firstItem="7XA-sD-pFb" firstAttribute="top" secondItem="2gA-qn-j59" secondAttribute="top" id="D0E-gk-JtI"/>
                             <constraint firstItem="2gA-qn-j59" firstAttribute="bottom" secondItem="Tl4-6w-wgu" secondAttribute="bottom" constant="19" id="GQY-ka-Mhf"/>
+                            <constraint firstItem="2gA-qn-j59" firstAttribute="trailing" secondItem="7XA-sD-pFb" secondAttribute="trailing" constant="20" id="GbU-Ya-zC4"/>
                             <constraint firstItem="Tl4-6w-wgu" firstAttribute="top" secondItem="OZ3-HX-vFh" secondAttribute="bottom" constant="41" id="JSM-qk-cZM"/>
                             <constraint firstItem="OZ3-HX-vFh" firstAttribute="top" secondItem="Tez-o8-ZOc" secondAttribute="bottom" constant="70" id="axr-Qx-1sK"/>
                             <constraint firstAttribute="trailing" secondItem="OZ3-HX-vFh" secondAttribute="trailing" constant="8" id="cTP-HV-G61"/>

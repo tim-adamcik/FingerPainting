@@ -43,5 +43,8 @@ class SettingsViewController: UIViewController {
     @IBAction func blueSliderMoved(_ sender: Any) {
     }
     
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }

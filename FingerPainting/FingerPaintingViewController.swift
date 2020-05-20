@@ -93,6 +93,8 @@ class FingerPaintingViewController: UIViewController {
     }
     
     @IBAction func settingsBtnPressed(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "SettingsViewController") as! SettingsViewController
+        present(vc, animated: true)
     }
 
     @IBAction func pencilPressed(sender: AnyObject) {
