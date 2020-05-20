@@ -281,7 +281,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tlp-Qz-Nn9">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tlp-Qz-Nn9">
                                                 <rect key="frame" x="64.5" y="0.0" width="278.5" height="25"/>
                                                 <connections>
                                                     <action selector="brushSliderMoved:" destination="KW7-iE-aiI" eventType="valueChanged" id="QK6-QV-e2b"/>
