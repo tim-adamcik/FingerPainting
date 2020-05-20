@@ -15,6 +15,7 @@
 		BA46828C246F27CD00E1117C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA46828B246F27CD00E1117C /* Assets.xcassets */; };
 		BA46828F246F27CD00E1117C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA46828D246F27CD00E1117C /* LaunchScreen.storyboard */; };
 		BA4682BE2474264400E1117C /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4682BD2474264400E1117C /* Pencil.swift */; };
+		BA4682C0247580A400E1117C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4682BF247580A400E1117C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA46828E246F27CD00E1117C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA468290246F27CD00E1117C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4682BD2474264400E1117C /* Pencil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
+		BA4682BF247580A400E1117C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				BA46827F246F27CB00E1117C /* AppDelegate.swift */,
 				BA468281246F27CB00E1117C /* SceneDelegate.swift */,
 				BA468283246F27CB00E1117C /* FingerPaintingViewController.swift */,
+				BA4682BF247580A400E1117C /* SettingsViewController.swift */,
 				BA468285246F27CB00E1117C /* Main.storyboard */,
 				BA46828B246F27CD00E1117C /* Assets.xcassets */,
 				BA46828D246F27CD00E1117C /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				BA468280246F27CB00E1117C /* AppDelegate.swift in Sources */,
 				BA4682BE2474264400E1117C /* Pencil.swift in Sources */,
 				BA468282246F27CB00E1117C /* SceneDelegate.swift in Sources */,
+				BA4682C0247580A400E1117C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
