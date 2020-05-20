@@ -86,6 +86,7 @@ class FingerPaintingViewController: UIViewController {
     }
     
     @IBAction func clearBtnPressed(_ sender: Any) {
+        mainImageView.image = nil
     }
     
     @IBAction func redoBtnPressed(_ sender: Any) {
