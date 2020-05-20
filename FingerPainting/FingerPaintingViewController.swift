@@ -94,6 +94,9 @@ class FingerPaintingViewController: UIViewController {
     
     @IBAction func settingsBtnPressed(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "SettingsViewController") as! SettingsViewController
+        vc.delegate = self
+        vc.brush = brushWidth
+        vc.opacity = opacity
         present(vc, animated: true)
     }
 
@@ -106,5 +109,15 @@ class FingerPaintingViewController: UIViewController {
           opacity = 1.0
         }
     }
+  
 }
 
+extension FingerPaintingViewController: SettingsViewControllerDelegate {
+    func settingsViewControllerFinished(_ settingsViewController: SettingsViewController) {
+        brushWidth = settingsViewController.brush
+        opacity = settingsViewController.opacity
+        dismiss(animated: true)
+    }
+    
+    
+}

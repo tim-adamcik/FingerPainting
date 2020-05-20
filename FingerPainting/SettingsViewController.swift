@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+protocol SettingsViewControllerDelegate: class {
+  func settingsViewControllerFinished(_ settingsViewController: SettingsViewController)
+}
+
+
 class SettingsViewController: UIViewController {
    
     @IBOutlet weak var brushWidthLabel: UILabel!
@@ -25,6 +30,9 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var blueSlider: UISlider!
     @IBOutlet weak var customColorLabel: UIImageView!
     
+    weak var delegate: SettingsViewControllerDelegate?
+    
+    
     var brush: CGFloat = 10.0
     var opacity: CGFloat = 1.0
     var red: CGFloat = 0.0
@@ -34,8 +42,10 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        brushSlider.value = Float(brush)
         brushWidthLabel.text = "\(brushSlider.value)"
         opacityLevelLabel.text = "\(opacitySlider.value)"
+        drawPreview()
     }
     
     func drawPreview() {
@@ -76,6 +86,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
+        delegate?.settingsViewControllerFinished(self)
         dismiss(animated: true, completion: nil)
     }
     
