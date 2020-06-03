@@ -21,6 +21,7 @@ class FingerPaintingViewController: UIViewController {
     var brushWidth: CGFloat = 10.0
     var opacity: CGFloat = 1.0
     var swiped = false
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,9 @@ class FingerPaintingViewController: UIViewController {
         tempImageView.image = UIGraphicsGetImageFromCurrentImageContext()
         tempImageView.alpha = opacity
         
+        let paintStroke = PaintStroke(strokeWidth: brushWidth, color: color, path: StrokePath(points: [lastPoint,currentPoint]))
+        PaintStrokeUndoManager.shared.add(stroke: paintStroke)
+        
         UIGraphicsEndImageContext()
     }
     
@@ -83,6 +87,7 @@ class FingerPaintingViewController: UIViewController {
 
     }
     @IBAction func undoBtnPressed(_ sender: Any) {
+        PaintStrokeUndoManager.shared.undo()
     }
     
     @IBAction func clearBtnPressed(_ sender: Any) {
@@ -90,6 +95,7 @@ class FingerPaintingViewController: UIViewController {
     }
     
     @IBAction func redoBtnPressed(_ sender: Any) {
+        PaintStrokeUndoManager.shared.redo()
     }
     
     @IBAction func settingsBtnPressed(_ sender: Any) {

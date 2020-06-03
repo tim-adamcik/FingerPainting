@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA3E184F2488122500374A69 /* PaintStrokeUndoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E184E2488122500374A69 /* PaintStrokeUndoManager.swift */; };
+		BA3E18522488126700374A69 /* PaintStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E18512488126700374A69 /* PaintStroke.swift */; };
+		BA3E1854248816C400374A69 /* PaintStrokeSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E1853248816C400374A69 /* PaintStrokeSaver.swift */; };
 		BA468280246F27CB00E1117C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46827F246F27CB00E1117C /* AppDelegate.swift */; };
 		BA468282246F27CB00E1117C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA468281246F27CB00E1117C /* SceneDelegate.swift */; };
 		BA468284246F27CB00E1117C /* FingerPaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA468283246F27CB00E1117C /* FingerPaintingViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA3E184E2488122500374A69 /* PaintStrokeUndoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintStrokeUndoManager.swift; sourceTree = "<group>"; };
+		BA3E18512488126700374A69 /* PaintStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintStroke.swift; sourceTree = "<group>"; };
+		BA3E1853248816C400374A69 /* PaintStrokeSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintStrokeSaver.swift; sourceTree = "<group>"; };
 		BA46827C246F27CB00E1117C /* FingerPainting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPainting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA46827F246F27CB00E1117C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA468281246F27CB00E1117C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA3E18502488124B00374A69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA3E184E2488122500374A69 /* PaintStrokeUndoManager.swift */,
+				BA3E18512488126700374A69 /* PaintStroke.swift */,
+				BA3E1853248816C400374A69 /* PaintStrokeSaver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BA468273246F27CB00E1117C = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +78,7 @@
 		BA46827E246F27CB00E1117C /* FingerPainting */ = {
 			isa = PBXGroup;
 			children = (
+				BA3E18502488124B00374A69 /* Model */,
 				BA4682BC2474263200E1117C /* View */,
 				BA46827F246F27CB00E1117C /* AppDelegate.swift */,
 				BA468281246F27CB00E1117C /* SceneDelegate.swift */,
@@ -155,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3E18522488126700374A69 /* PaintStroke.swift in Sources */,
 				BA46828A246F27CB00E1117C /* FingerPainting.xcdatamodeld in Sources */,
+				BA3E1854248816C400374A69 /* PaintStrokeSaver.swift in Sources */,
 				BA468284246F27CB00E1117C /* FingerPaintingViewController.swift in Sources */,
 				BA468280246F27CB00E1117C /* AppDelegate.swift in Sources */,
+				BA3E184F2488122500374A69 /* PaintStrokeUndoManager.swift in Sources */,
 				BA4682BE2474264400E1117C /* Pencil.swift in Sources */,
 				BA468282246F27CB00E1117C /* SceneDelegate.swift in Sources */,
 				BA4682C0247580A400E1117C /* SettingsViewController.swift in Sources */,
