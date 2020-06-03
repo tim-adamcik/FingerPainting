@@ -55,7 +55,7 @@ class FingerPaintingViewController: UIViewController {
         tempImageView.image = UIGraphicsGetImageFromCurrentImageContext()
         tempImageView.alpha = opacity
         
-        let paintStroke = PaintStroke(strokeWidth: brushWidth, color: color, path: StrokePath(points: [lastPoint,currentPoint]))
+        let paintStroke = PaintStroke(strokeWidth: brushWidth, color: color, path: StrokePath(points: [lastPoint,toPoint]))
         PaintStrokeUndoManager.shared.add(stroke: paintStroke)
         
         UIGraphicsEndImageContext()
